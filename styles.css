@@ -1,0 +1,40 @@
+body{
+	background-color: brown;
+}
+
+html{
+	text-align: center;
+}
+
+.header {
+	background-color: grey
+}
+
+.nav{
+	list-style-type: none;
+	overflow: hidden;
+	background-color: gray;
+}
+
+img.logo{
+	width:10%;
+	float:left;
+	padding:2px;
+}
+
+.nav a{
+	float: left;
+	display: block;
+	color: black;
+	text-align: center;
+	padding: 20px 15px;
+	text-decoration: none;
+}
+
+.nav a:hover:not(.active){
+	background-color: white;
+}
+
+.active{
+	background-color: yellow;
+}
