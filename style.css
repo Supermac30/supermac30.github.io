@@ -1,51 +1,16 @@
 html, body {
 	margin: 0;
 	padding: 0;
-}
-
-body{
-	background-color: brown;
-}
-
-.header {
-	background-color: grey
-}
-
-.nav{
-	list-style-type: none;
-	overflow: hidden;
-	background-color: gray;
+    background: #E1341E !important;
 }
 
 .info{
     text-align:center;
+    color: #FFFFFF;
 }
 
 .gameList{
     padding: 10px;
+    color: #FFFFFF;
+    text-decoration: none;
 }
-
-img.logo{
-	width:10%;
-	float:left;
-	padding:2px;
-}
-
-.nav a{
-	float: left;
-	display: block;
-	color: black;
-	text-align: center;
-	padding: 20px 15px;
-	text-decoration: none;
-}
-
-.nav a:hover:not(.active){
-	background-color: white;
-}
-
-.active{
-	background-color: yellow;
-}
-
-
