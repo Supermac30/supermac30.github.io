@@ -207,7 +207,10 @@ class Piece {
 
 var board = new Board(1);
 function setup() {
-  createCanvas(400, 400);
+  var cnv = createCanvas(400, 400);
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) / 5;
+  cnv.position(x, y);
 }
 
 var state = 0;

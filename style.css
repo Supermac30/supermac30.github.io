@@ -7,10 +7,6 @@ body{
 	background-color: brown;
 }
 
-html{
-	text-align: center;
-}
-
 .header {
 	background-color: grey
 }
@@ -19,6 +15,14 @@ html{
 	list-style-type: none;
 	overflow: hidden;
 	background-color: gray;
+}
+
+.info{
+    text-align:center;
+}
+
+.gameList{
+    padding: 10px;
 }
 
 img.logo{
