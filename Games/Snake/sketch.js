@@ -9,7 +9,7 @@ function setup() {
   var cnv = createCanvas(400, 400);
   food.initialise();
   var x = (windowWidth - width) / 2;
-  var y = (windowHeight - height) / 5;
+  var y = (windowHeight - height) * 2 / 5;
   cnv.position(x, y);
 }
 
