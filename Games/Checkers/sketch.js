@@ -231,7 +231,7 @@ function draw() {
 }
 
 function coolAI() {
-  board = minimax(board, false, 4, -13, 13)[1];
+  board = minimax(board, false, 6, -13, 13)[1];
 }
 
 var lastClicked = "0";
