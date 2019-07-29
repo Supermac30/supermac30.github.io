@@ -5,7 +5,10 @@ let snake = new Snake();
 let food = new Food();
 
 function setup() {
-  createCanvas(400, 400);
+  var cnv = createCanvas(400, 400);
+  var x = (windowWidth - width) / 2;
+  var y = (windowHeight - height) * 2 / 5;
+  cnv.position(x, y);
   food.initialise();
 }
 
