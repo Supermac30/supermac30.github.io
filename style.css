@@ -39,8 +39,18 @@ html, body {
     font-family: Courier New;
     font-size: 90%;
     padding-left: 2em;
+    white-space: pre;
+    line-height: 0.8em;
 }
 
 .date{
     color: darkslategray;
+    font-style: italic;
+}
+
+img{ 
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
 }
