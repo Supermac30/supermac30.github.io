@@ -16,7 +16,10 @@ html, body {
 }
 
 .blog{
-    margin: 10px;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
     border: 2px solid blue;
     border-style: inset;
     border-radius: 5px;
@@ -28,7 +31,11 @@ html, body {
     border: 2px solid blue;
     border-style: inset;
     border-radius: 5px;
-    margin: 3em;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    padding: 0.5em;
 }
 
 .code {
