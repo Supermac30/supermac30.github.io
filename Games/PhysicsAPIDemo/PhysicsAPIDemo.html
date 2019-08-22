@@ -26,5 +26,22 @@
            </ul>
 	   </nav>
         <script src="sketch.js" type="text/javascript"></script>
+        <form id="attribs" style="margin: 1em">
+            <br><br><br><br>
+            Mass:
+            <input type="text" name="mass" value="1"><br><br>
+            Coeff. of Restitution:
+            <input type="text" name="cor" value="0.5"><br><br>
+            GravityX:
+            <input type="text" name="gx" value="0"><br><br>
+            GravityY:
+            <input type="text" name="gy" value="9.8"><br><br>
+            Density of Air:
+            <input type="text" name="density" value="1.8"><br><br>
+            Drag Coeff.:
+            <input type="text" name="dragC" value="0.5"><br><br>
+        </form>
+        <button style="margin:1em" onclick="editSite()">Change Parameters</button>
+        
     </body>
 </html>

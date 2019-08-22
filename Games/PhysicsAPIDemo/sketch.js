@@ -1,5 +1,5 @@
 let g = [0, 9.8]; // gravitational constant
-let density = 1.8;
+let density = 0.3;
 let t = 0.2;
 let cFriction = 0.1; // Coefficient of kinetic friction for all surfaces
 
@@ -11,10 +11,10 @@ class Ball {
     this.radius = 15; 
     this.color = 0xFFFFFF;
     this.mass = 1;
-    this.cor = 0.5 // coefficient of restitution
+    this.cor = 0.9 // coefficient of restitution
     this.velocity = [0,0];
     this.forces = [];  // holds all the forces acting on the object 
-    this.dragC = 0.5;
+    this.dragC = 1;
     this.normalF = 0;
   }
   draw() {
@@ -161,7 +161,7 @@ let walls = [new Ground(0,0,10,1000), new Ground(0,0,10,1000)]
 function setup() {
   var cnv = createCanvas(700, 600);
   var x = (windowWidth - width) / 2;
-  var y = (windowHeight - height) * 2 / 5 + 50;
+  var y = (windowHeight - height) * 2 / 5 + 30;
   cnv.position(x, y);
   frameRate(60);
   grounds[0].loc[1] = height-50;
@@ -212,4 +212,13 @@ function keyPressed(){
   if (key == "d") {
     ball.hit(apply,0);
   }
+}
+
+function editSite() {
+    var attribs = document.getElementById("attribs");
+    ball.mass = attribs.elements[0].value;
+    ball.cor = attribs.elements[1].value;
+    g = [attribs.elements[2].value, attribs.elements[3].value];
+    density = attribs.elements[4].value;
+    ball.dragC = attribs.elements[5].value;
 }
