@@ -38,18 +38,6 @@ html, body {
     padding: 0.5em;
 }
 
-.code {
-    background-color: dimgrey;
-    color: white;
-    margin-left: 10px;
-    margin-right: 10px;
-    font-family: Courier New;
-    font-size: 90%;
-    padding-left: 2em;
-    white-space: pre;
-    line-height: 0.8em;
-}
-
 .date{
     color: darkslategray;
     font-style: italic;
