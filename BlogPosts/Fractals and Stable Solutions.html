@@ -1,0 +1,173 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Fractals and Stable Solutions</title>
+        <meta name="author" content="Mark B.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <script>window.MathJax = { MathML: { extensions: ["mml3.js", "content-mathml.js"]}};</script>
+        <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=MML_HTMLorMML"></script>
+
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-sm justify-content-center bg-primary navbar-dark">
+            <a class="navbar-brand" style="color:white;">Fun On A Bun</a>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="../blog.html">Blog</a>
+                </li>
+                <li class="nav-item">
+                   <a class="nav-link" href="../games.html">Games</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="blog">
+            <h1 style="text-align: center;">Stable Solutions and Fractals</h1>
+            <h7 class="date">Posted by Bedaywi, Mark on January 13, 2019</h7> 
+            <p class="date">Read Time: 3 Minutes</p>
+            <p>
+                On the last blog post I looked at the effect of recursion on functions and how we can use this to solve equations of the form f(x)=x numerically. Suspiciously, this didn't work for some functions, for some starting values. The functions where unstable. Inspired by the Mandelbrot Set I decided to investigate this further. 
+            </p>
+            <p>
+                For example, consider the function
+                <math>
+                    <mrow>
+                        <mi>f</mi>
+                        <mo>(</mo>
+                        <mi>z</mi>
+                        <mo>)</mo>
+                    </mrow>
+                    <mrow>
+                        <mo>=</mo>
+                        <mfrac>
+                            <mrow>
+                                <msup>
+                                    <mrow>
+                                        <mo>(</mo>
+                                        <msub>
+                                            <mo>log</mo>
+                                            <mi>z</mi>
+                                        </msub>
+                                        <mn>10</mn>
+                                        <mo>+</mo>
+                                        <mn>1</mn>
+                                        <mo>)</mo>
+                                    </mrow>
+                                    <mi>z</mi>
+                                </msup>
+                            </mrow>
+                            <mn>10</mn>
+                        </mfrac>
+                    </mrow>
+                </math>
+                Some when finding the answer to
+                <math>
+                    <mrow>
+                        <mrow>
+                            <munder>
+                                <mo>lim</mo>
+                                <mrow>
+                                    <mi>n</mi>
+                                    <mo>&rarr;</mo>
+                                    <mn>&infin;</mn>
+                                </mrow>
+                            </munder>
+                            <msup>
+                                <mi>f</mi>
+                                <mi>n</mi>
+                            </msup>
+                            <mo>(</mo>
+                            <mi>z</mi>
+                            <mo>)</mo>
+                            <mo>=</mo>
+                        </mrow>
+                        <mrow>
+                            <mi>f(f(f(f(f(f(f(f(...</mi>
+                        </mrow>
+                        <mrow>
+                            <mo>=</mo>
+                            <mi>k</mi>
+                        </mrow>
+                    </mrow>
+                </math>
+                as we did last time we notice that not all starting values of x lead to a solution, and not all of the values who do lead to the same solution.
+            </p>
+            <p>
+                For example if we start with z=2 the value of k approaches about 1.7344, which I showed last time to be a solution to f(z)=z, but if I start at x=4, for example, the value of k blows up and diverges. I was completely bamboozled as to why this happened and so I decided to try to graph and create a <a href="http://mathworld.wolfram.com/JuliaSet.html">Julia Set</a>.
+            </p>
+            <p>
+                If a starting value of x doesn't diverge to infinity, i.e. we can use it to solve the equation f(z)=z, then I will colour it. The darker the colour the faster it converges, which means it is then more useful for solving the equation. If it diverges to infinity then we colour it white. Doing this with the function above we get this magnificent fractal.
+            </p>
+            <img src="Pictures/Fractals and Stable Solutions/fractal0.png">
+            <p>
+                This is incredibly surprising and incredibly cool. Looking closer at this image we see the water fountain-like shape seems to be infinitly self similar, with each tip holding the blob, and on each blob we can see a similar fountain. The claws that surround the entire image look like the claws on the side of the blob suggesting that if we zoom out enough we will see the same shape again. The beautiful patterns in the lines are probably the result of many tiny bands of the waterfountain interacting at the roots.
+            </p>
+            <p>
+                This shape, while beautiful, is very crowded. To make this easier to analyse I decided to only colour points if they approach 1.7344 . Doing this we get another fractal. While looking very different similar properties can be seen.
+            </p>
+            <img src="Pictures/Fractals and Stable Solutions/fractal1.png">
+            <p>
+                We see the fountains on have disappeared but ow we can see the finer details of the claws, and what are on them. Inside every claw there seems to be an infinity amount of claws descending. On the sides of each claw are smaller claws that keep going. The coolest part of this fractal, however, are the blobs we can see on the claws. They are exactly the same as the massive blob. I conjecture that, although we cannot see it from this resolution, the number of blobs on each claw is infinity. Zooming into a claw we can see that it is exactly the same.
+            </p>
+            <img src="Pictures/Fractals%20and%20Stable%20Solutions/fractal2.png">
+            <p>
+                I suspect that the finer lines are due only to my algorithm, which stops after a finite number of iterations. We can see the same shape again, we can keep zooming in forever. Notice how the middle line that connects the blob to the main body can also be seen on the main body. This means if we zoom out we should find a similar shape.
+            </p>
+            <img src="Pictures/Fractals and Stable Solutions/fractal3.png">
+            <p>
+                I suspect that there should be a massive blob on the left with massive claws connect them together. If this is true then it suggests that each claw is connected on the tips, but finely. I conjecture that this shape is fully connected.
+            </p>
+            <p>
+                What if we try this with different functions? For example this is what f(z) = z^2 looks like.
+            </p>
+            <img src="Pictures/Fractals%20and%20Stable%20Solutions/fractal4.png">
+            <p>
+                While not as cool we can still see similar patterns. The same inifinitly decscending and self repeating property can be seen.
+            </p>
+            <p>
+                Here is a list of all the function I tried and cool fractals I created.
+            </p>
+            <!-- Put pictures here -->
+            <p>
+                I created an applet here <!-- Add link --> to view these Julia sets since I couldn't find any other ones online. Try playing with these functions yourself!
+                
+                While I was on my fractal high I began playing a lot more with the idea of chaos creating fractals. For example, if we look at <a href="https://en.wikipedia.org/wiki/Sierpi%C5%84ski_triangle#Chaos_game">this chaos game</a> that produces sierpinski's triangle we can generalise it in terms of complex numbers. 
+            </p>
+            <p>
+                If we choose three sides of a triangle, and a starting number, on the complex plane and then take the arithmetic mean of the number and a random vertex of the triangle over and over we can find sierpinski's triangle.
+            </p>
+            <p>
+                But what if we didn't take the arithmetic mean? We can try playing with this function to get wierder fractals. For example, if we take the geometric mean we get this shape.
+            </p>
+            <img src="Pictures/Fractals%20and%20Stable%20Solutions/Geometric%20Mean.png">
+            <p>
+                And a harmonic mean results in this shape.
+            </p>
+            <img src="Pictures/Fractals%2520and%2520Stable%2520Solutions/Harmonic%20Mean.png">
+            <p>
+                It almost looks like serpenski's triangle was generated in non-euclidean space and projected onto the screen. I am still experimenting with different functions but haven't found anything interesting yet other than the ones listed above.
+            </p>
+            <p>
+                Still on my fractal high, I started looking for more geometrically analysable fractals. A simple one stood out to me.
+            </p>
+            <p>
+                First, we must draw a right angle triangle ABC. Then we can drop a perpendicular from the right angle B to the side AC. Then from the point where the new line intersects AC we can drop a perpendicular to BC, then from BC to AC and so on. 
+            </p>
+            <!-- Insert Fractal Here -->
+            <p>
+                We get a zigzag pattern, while not as beautiful as other fractals, has some intersting properties. For one, we can create an elegent proof for an infinite series of trigonometric functions like so.
+            </p>
+            <!-- Insert labelled fractal here -->
+            <p>
+                This is probably how the Ancient Greeks could have discovered Trigonometry.
+            </p>
+            <p>
+                Lastly, we can generalise Minkowski's Sausage to get a fractal of arbitrarily large dimension. Notice that if we take Minkowski's sausage and add more squares to it we can create a shape with a larger capacity dimension. A Minkowski sausage with n boxes will have dimension <!-- Look at notes for dimension -->. Increasing the number of boxes makes the fractal look more and more like a coral reef, which I think is interesting.
+            </p>
+        </div>
+    </body>
+</html>

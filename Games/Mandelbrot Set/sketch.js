@@ -15,8 +15,6 @@ function setup() {
     cnv.position(x, y);
     uppR = width/(endR-startR);
 	uppI = width/(endI-startI);
-    console.log("A and D for iterations");
-    console.log("Left and Right for inc");
 }
 
 function draw() {
@@ -50,7 +48,7 @@ function editSite() {
     endR = parseFloat(attribs.elements[2].value);
     startI = parseFloat(attribs.elements[3].value);
     endI = parseFloat(attribs.elements[4].value);
-    expo =  parseFloat(attribs.elements[5].value);
+    expo = parseFloat(attribs.elements[5].value);
     uppR = width/(endR-startR);
 	uppI = width/(endI-startI);
     drawn = false;
