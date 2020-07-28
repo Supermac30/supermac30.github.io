@@ -1,18 +1,40 @@
 html, body {
 	margin: 0;
 	padding: 0;
-    background: #E1341E !important;
+    background: #A83C05 !important;
+}
+
+a {
+    color: #000000;
 }
 
 .info{
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    border: 2px solid;
+    border-color: #A80505;
+    border-style: inset;
+    border-radius: 5px;
+    overflow: hidden;
+    padding:10px;
+    background-color: aliceblue;
     text-align:center;
-    color: #FFFFFF;
 }
 
 .gameList{
-    padding: 10px;
-    color: #FFFFFF;
-    text-decoration: none;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 1vw;
+    margin-bottom: 1vw;
+    border: 2px solid;
+    border-color: #00FFFF;
+    border-style: inset;
+    border-radius: 5px;
+    overflow: hidden;
+    padding:10px;
+    background-color: aliceblue;
 }
 
 .blog{
@@ -20,15 +42,18 @@ html, body {
     margin-right: 10vw;
     margin-top: 1vw;
     margin-bottom: 1vw;
-    border: 2px solid blue;
+    border: 2px solid;
+    border-color: #A80505;
     border-style: inset;
     border-radius: 5px;
     overflow: hidden;
     padding:10px;
+    background-color: aliceblue;
 }
 
 .post{
-    border: 2px solid blue;
+    border: 2px solid;
+    border-color: #A80505;
     border-style: inset;
     border-radius: 5px;
     margin-left: 10vw;
@@ -36,6 +61,7 @@ html, body {
     margin-top: 1vw;
     margin-bottom: 1vw;
     padding: 0.5em;
+    background-color: white;
 }
 
 .date{
@@ -50,3 +76,8 @@ img{
     width: 20em;
     padding:inherit;
 }
+
+.navbar-custom { 
+    background-color: #05A8A8; 
+    margin-bottom: 0.5em;
+} 
