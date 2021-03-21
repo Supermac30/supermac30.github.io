@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Julia Set Viewer</title>
+        <meta name="author" content="Mark B.">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.8.0/addons/p5.dom.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="../../style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <meta charset="utf-8">
+        <script src="math.min.js"></script>
+	</head>
+	<body>
+        <nav class="navbar navbar-expand-sm justify-content-center navbar-custom navbar-dark">
+            <a class="navbar-brand" style="color:white;">Mark Bedaywi</a>
+           <ul class="navbar-nav">
+               <li class="nav-item">
+                   <a class="nav-link" href="../../index.html">Home</a>
+               </li>
+               <li class="nav-item">
+                   <a class="nav-link" href="../../blog.html">Blog</a>
+               </li>
+               <li class="nav-item active">
+                  <a class="nav-link" href="../../games.html">Games</a>
+               </li>
+           </ul>
+	   </nav>
+		<h1 style="color: white; text-align: center">Julia Set Viewer</h1>
+		<p style="color: white; margin: 1em;">
+			Welcome to my Julia Set Viewer. Type in the equation to see the corrseponding fractal. The Julia Set of a function is defined to be the set of points such that repeated iteration under some starting complex value doesn't diverge to infinite. We can plot this on the complex plane below with a white pixel where ever it diverges, and a black pixel where it converges. The darker the pixel the faster it converges. Look at <a href="/BlogPosts/Infinite%20Recursion%20And%20It's%20Limits.html">my blog post</a> on fixed points to see how this iteration works and <a href="/BlogPosts/Fractals%20and%20Stable%20Solutions.html">this post</a> to look at awesome fractals you can try. Insert the equation as mathjs code. The smaller the error and larger the iterations, the more accurate the picture is.
+		</p>
+		<div class="form-group">
+			<form id="attribs" style="margin: 1em">
+				<br>
+				Equation:
+				<input type="text" name="equation" value="math.divide(math.pow(math.add(math.log(10, z), 1), z), 10)"><br><br>
+	            Iterations:
+	            <input type="text" name="iterations" value="40"><br><br>
+	            Error:
+	            <input type="text" name="iterations" value="0.1"><br><br>
+	            Starting Real Value:
+	            <input type="text" name="startR" value="0" step="any"><br><br>
+	            Ending Real Value:
+	            <input type="text" name="endR" value="6" step="any"><br><br>
+	            Starting Imaginary Value:
+	            <input type="text" name="startI" value="-3" step="any"><br><br>
+	            Ending Imaginary Value:
+	            <input type="text" name="endI" value="3" step="any"><br><br>
+        	</form>
+        </div>
+        <button style="margin:1em" onclick="editSite()" type="button" class="btn btn-primary">Calculate</button>
+        <br>
+        <script src="sketch.js" class="fractal"></script>
+    </body>
+</html>
