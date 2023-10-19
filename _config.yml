@@ -4,7 +4,7 @@
 
 title: Mark Bedaywi # the website title (if blank, full name will be used instead)
 first_name: Mark
-middle_name:
+middle_name:   # optional
 last_name: Bedaywi
 email: mark.bedaywi@mail.utoronto.ca
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
@@ -184,6 +184,7 @@ latest_posts:
 # -----------------------------------------------------------------------------
 
 # Markdown and syntax highlight
+theme: al-folio
 markdown: kramdown
 highlighter: rouge
 kramdown:

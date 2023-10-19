@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I was awarded an NSERC grant to research accelerating RL with [Amir-massoud Farahmand](sologen.net) at the [Vector Institute](https://vectorinstitute.ai/).
+I was awarded an NSERC grant to research accelerating RL with [Amir-massoud Farahmand](https://www.sologen.net) at the [Vector Institute](https://vectorinstitute.ai/).

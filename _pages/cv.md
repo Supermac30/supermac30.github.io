@@ -5,7 +5,7 @@ title: cv
 nav: true
 nav_order: 3
 cv_pdf: cv.pdf
-description:
+description: An interactive overview of the CV. See the attached pdf for full details.
 toc:
   sidebar: left
 ---
