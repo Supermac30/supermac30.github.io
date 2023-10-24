@@ -184,7 +184,6 @@ latest_posts:
 # -----------------------------------------------------------------------------
 
 # Markdown and syntax highlight
-theme: al-folio
 markdown: kramdown
 highlighter: rouge
 kramdown:
