@@ -2,74 +2,96 @@
   type: map
   contents:
     - name: Full Name
-      value: Mark Bedaywi
+      value: Albert Einstein
     - name: Date of Birth
-      value: 8th May 2003
-    # - name: Languages
-    #   value: English
+      value: 14th March 1879
+    - name: Languages
+      value: English, German
 
 - title: Education
   type: time_table
   contents:
-    # - title: PhD
-    #   institution: University of Zurich, Zurich, Switzerland
-    #   year: 1905
-    #   description:
-    #     - Description 1.
-    #     - Description 2.
-    #     - title: Description 3.
-    #       contents:
-    #         - Sub-description 1.
-    #         - Sub-description 2.
-    - title: Bachelor of Science, Specialist in Computer Science with a focus on Artificial Intelligence and Theory, Major in Mathematics
-      institution: University of Toronto, Toronto, Canada
-      year: 2020-2024(Expected)
+    - title: PhD
+      institution: University of Zurich, Zurich, Switzerland
+      year: 1905
       description:
-        - GPA 3.96/4.0
-        - Recipient of $20,000 in scholarships and $8,000 in grants
+        - Description 1.
+        - Description 2.
+        - title: Description 3.
+          contents:
+            - Sub-description 1.
+            - Sub-description 2.
+    - title: Federal teaching diploma
+      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
+      year: 1900
+      description:
+        - Description 1.
+        - Description 2.
 
-- title: Research Experience
+- title: Experience
   type: time_table
   contents:
-    - title: Undergraduate Research Assistant
-      institution: University of Toronto, Department of Computer Science
-      year: 2023
+    - title: Professor of Theoretical Physics
+      institution: Institute for Advanced Study, Princeton University
+      year: 1933 - 1955
       description:
-        - Collaborating with Professor Nisarg Shah on a research project in the field of algorithmic fairness.
-    - title: NSERC USRA Research Assistant
-      institution: Vector Institute for Artificial Intelligence
+        - Description 1.
+        - Description 2.
+        - title: Description 3.
+          contents:
+            - Sub-description 1.
+            - Sub-description 2.
+    - title: Visiting Professor
+      institution: California Institute of Technology, Pasadena, California, US
       year: 1933
       description:
-        - Collaborating with Professor Amir-massoud Farahmand on a research project in the field of reinforcement learning.
-        - Building and managing a substantial code base, overseeing all aspects of its development and maintenance.
+        - Description 1.
+        - Description 2.
 
-# - title: Open Source Projects
-#   type: time_table
-#   contents:
-#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-#       year: 2015-now
-#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Director
+      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
+      year: 1917-1933
+
+    - title: Professor of Theoretical Physics
+      institution: Karl-Ferdinand University, Prague, Czechoslovakia
+      year: 1911 - 1917
+      description:
+
+    - title: Associate Professor of Theoretical Physics
+      institution: University of Zurich, Zurich, Switzerland
+      year: 1909 - 1911
+
+- title: Open Source Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
+      year: 2015-now
+      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Honors and Awards
   type: time_table
   contents:
-    - year: 2023
+    - year: 1921
       items: 
-        - NSERC Undergraduate Student Research Award
+        - Nobel Prize in Physics 
+        - Matteucci Medal
+    - year: 2029
+      items: 
+        - Max Planck Medal
 
-# - title: Academic Interests
-#   type: nested_list
-#   contents:
-#     - title: Topic 1.
-#       items: 
-#         - Description 1.
-#         - Description 2.
-#     - title: Topic 2.
-#       items:
-#         - Description 1.
-#         - Description 2.
+- title: Academic Interests
+  type: nested_list
+  contents:
+    - title: Topic 1.
+      items: 
+        - Description 1.
+        - Description 2.
+    - title: Topic 2.
+      items:
+        - Description 1.
+        - Description 2.
 
-# - title: Other Interests
-#   type: list
-#   contents:
-#     - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+- title: Other Interests
+  type: list
+  contents:
+    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
