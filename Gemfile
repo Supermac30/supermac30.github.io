@@ -25,6 +25,3 @@ group :other_plugins do
     gem 'feedjira'
     gem 'httparty'
 end
-
-# To run this gemfile, run the following command:
-# 
