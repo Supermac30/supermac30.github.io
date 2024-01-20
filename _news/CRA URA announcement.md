@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-I was given a [CRA Outstanding Undergraduate Researcher](https://cra.org/crae/awards/cra-outstanding-undergraduate-researchers/) award!
+I am a [CRA Outstanding Undergraduate Researcher](https://cra.org/crae/awards/cra-outstanding-undergraduate-researchers/) finalist!
