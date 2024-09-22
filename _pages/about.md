@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Computer Science PhD Student at UC, Berkeley
+subtitle: Computer Science PhD Student at UC Berkeley
 
 profile:
   align: right
