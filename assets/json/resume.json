@@ -12,6 +12,7 @@
       "position": "Research Assistant",
       "url": "https://web.cs.toronto.edu/",
       "startDate": "2023",
+      "endDate": "2024",
       "summary": "Worked on analyzing and designing methods of participatory budgeting that are optimal under certain notions of fairness."
     },
     {
@@ -19,6 +20,7 @@
       "position": "Research Assistant",
       "url": "https://vectorinstitute.ai/",
       "startDate": "2023",
+      "endDate": "2024",
       "summary": "Worked on accelerating reinforcement learning using techniques from control theory. Built and maintained a substantial codebase to accomplish this."
     }
   ],
