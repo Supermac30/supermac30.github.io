@@ -2,14 +2,14 @@
 layout: about
 title: about
 permalink: /
-subtitle: Undergraduate Student in CS and Mathematics
+subtitle: Computer Science PhD Student at UC, Berkeley
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    <p>Email: mark dot bedaywi at utoronto dot ca</p>
+    <p>Email: mark underscore bedaywi at berkeley dot edu</p>
 
 news: true  # includes a list of news items
 latest_posts: false  # includes a list of the newest posts
@@ -17,4 +17,4 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-Hi! I'm Mark Bedaywi, a fourth year undergraduate studying computer science and mathematics at the University of Toronto. I'm interested very broadly in creating systems with privacy, robustness, fairness, and safety guarantees. The end goal being to ensure that learning algorithms are as trustworthy as they can be.
+Hello! I'm Mark Bedaywi, a first year Computer Science PhD student at [Berkeley AI Research](https://bair.berkeley.edu/) in [UC, Berkeley](https://www.berkeley.edu/), supervised by [Nika Haghtalab](https://people.eecs.berkeley.edu/~nika/) and [Stuart Russell](http://people.eecs.berkeley.edu/~russell/), doing work in EconML. I've done work on fairly aggregating preferences in multi-agent systems, accelerating reinforcement learning algorithms, and identifying safety failure modes for AI assistants. My current interests include collaborative learning in the presence of incentives, inverse reinforcement learning & assistance games, and the game theory of persuasion, agreement & cooperation.

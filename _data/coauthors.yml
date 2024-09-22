@@ -1,3 +1,15 @@
+"Emmons":
+  - firstname: ["Scott"]
+    url: https://www.scottemmons.com/
+
+"Russell":
+  - firstname: ["Stuart"]
+    url: https://www.cs.berkeley.edu/~russell/
+
+"Haghtalab":
+  - firstname: ["Nika"]
+    url: https://people.eecs.berkeley.edu/~nika/
+
 "Farahmand":
   - firstname: ["Amir-massoud"]
     url: https://www.sologen.net
