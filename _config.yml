@@ -10,8 +10,8 @@ email: mark.bedaywi@mail.utoronto.ca
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A fourth year computer science and mathematics undergraduate at the University of Toronto.
 footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  Powered by <a href="https://jekyllrb.com/" target="_blank" rel="noopener noreferrer">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
+  Hosted by <a href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">GitHub Pages</a>.
 keywords:  # add your own keywords or leave empty
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
@@ -376,6 +376,10 @@ enable_progressbar:         true   # enables a horizontal progress bar linked to
 
 bootstrap-table:
   version: "1.22.1"
+  integrity: "sha384-GVLHfbEvuGA/RFiQ3MK2ClEJkWYJXABg55t9LpoDPZFGIsSq8xhFlQydm5poV2jW"
+imagesloaded:
+  version: "4.1.4"
+  integrity: "sha384-YnGSHPPWEUDKMHFPOVmNP7Xyfwx5G0CHet6IoNgiX6CbFZS8gCeIfEgB1MgPwjdI"
 jquery:
   version: "3.6.0"
   integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
