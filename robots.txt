@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /assets/pdf/drafts/
 
 Sitemap: supermac30.github.io/sitemap.xml
